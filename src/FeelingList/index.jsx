@@ -4,7 +4,7 @@ import './style.css';
 class FeelingList extends React.Component {
   render() {
     return (
-      <div>
+      <div className="feeling-list">
         <h1>Feeling List</h1>
       </div>
     );
