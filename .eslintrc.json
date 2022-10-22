@@ -7,9 +7,10 @@
         "plugin:react/recommended",
         "airbnb"
     ],
-    "overrides": [
-    ],
     "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
@@ -17,5 +18,7 @@
         "react"
     ],
     "rules": {
+        "react/prefer-stateless-function": "off",
+        "react/prop-types": "off"
     }
 }
