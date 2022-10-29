@@ -9,18 +9,15 @@
 }
 
 .title {
+  font-family: sans-serif;
   width: 360px;
   height: 360px;
   border: solid 8px #000;
   position: relative;
-  font-family: sans-serif;
-  /* border-style: solid;
-  border-width: 8px;
-  border-color: #000; */
   /* position: absolute;
   left: 50%;
-  top: 50%; 
-  transform: translate(-50%, -50%); */
+  top: 50%; */
+  /* transform: translate(-50%, -50%); */
 }
 
 .title>h1 {
