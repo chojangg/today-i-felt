@@ -4,14 +4,27 @@ import RadioFeeling from './RadioFeeling';
 
 class AddFeeling extends React.Component {
   render() {
+    const now = new Date();
+    now.getYear();
+    now.getMonth();
+    now.getDate();
     return (
       <div className="add-feeling">
         <div>날짜</div>
-        <div>2022. 11. 29</div>
+        <div className="inline-filed">
+          <input
+            type="text"
+            name="date"
+            readOnly
+            value={`${now.getFullYear()}. ${now.getMonth() + 1}. ${now.getDate()}`}
+          />
+        </div>
         <div>날씨</div>
-        <div>맑음</div>
+        <div className="inline-filed">
+          <input type="text" name="wether" />
+        </div>
         <div>기분</div>
-        <div>
+        <div className="feeling-list">
           <RadioFeeling feeling="good" />
           <RadioFeeling feeling="nice" />
           <RadioFeeling feeling="angry" />
